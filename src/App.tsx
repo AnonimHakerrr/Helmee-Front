@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/home-page/Home-page';
 import NeedsHelps from './pages/needs-help/NeedsHelps';
 import Register from './pages/auth/register/Register';
+import Login from './pages/auth/login/Login';
 
 function App() {
   const [count, setCount] = useState(0); // State for demonstration purposes
@@ -19,7 +20,7 @@ function App() {
       <Route index element={<HomePage />} /> 
       <Route path="needs" element={<NeedsHelps />}/> 
       <Route path="reg" element={<Register />}/> 
-      
+      <Route path="log" element={<Login />}/> 
          </Route>
       </Routes>
     </div>
