@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 
-import Logo from '../../assets/logo/logo.svg';
+import Logo from '../assets/logo/logo.svg';
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
