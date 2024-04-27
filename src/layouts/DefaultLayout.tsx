@@ -9,7 +9,7 @@ const DefaultLayout = () => {
   return (
     <div className="dark:bg-body dark:text-bodydark ">
       {/* <!-- ===== Page Wrapper Start ===== --> */}
-      <div className="flex h-screen overflow-hidden">
+      <div className="flex   overflow-hidden">
        
         {/* <!-- ===== Content Area Start ===== --> */}
         <div
