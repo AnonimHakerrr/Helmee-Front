@@ -43,21 +43,21 @@ return(
   </div>
   <button type="submit" className=" w-[301px] block    ml-24 px-2 py-2 bg-[#5BC0EB] border-[2px] border-[solid] border-[#FEFCF4]   rounded-[4px] text-center text-sm font-semibold text-white shadow-sm hover:bg-[#FEFCF4] hover:text-[#5BC0EB] hover:border-[#5BC0EB]   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Зареєструватися</button>
 
-  <label htmlFor="terms" className="ms-2 my-4 text-sm font-medium text-gray-900 dark:text-gray-900">У вас є акаунт? <a href="/signIn" className="text-blue-600 hover:underline dark:text-[#5BC0EB]">Увійти</a> </label>
+  <label htmlFor="terms" className="ms-2 my-4 text-sm font-medium text-gray-900 dark:text-gray-900">У вас є акаунт? <a href="/log" className="text-blue-600 hover:underline dark:text-[#5BC0EB]">Увійти</a> </label>
   
 
 </form>
 
-<h1 className="text-sm font-medium ">або за допомогою</h1>
-<div className="flex flex-grow items-center absolute left-[70%] top-[690px]">
-      
-<img src={Google} alt="Logo" className="mx-4"/>       <img src={FaceBook} alt="Logo" />
-    
-    
-    
-    
-    
-    </div>
+                <h1 className="text-sm font-medium ">або за допомогою</h1>
+                <div className="flex flex-grow items-center absolute left-[70%] top-[690px]">
+
+                    <img src={Google} alt="Logo" className="mx-4" />       <img src={FaceBook} alt="Logo" />
+
+
+
+
+
+                </div>
 
 
             </div>
