@@ -7,8 +7,8 @@ const HomePage = () => {
     <div className="relative z-10" role="dialog" aria-modal="true">
  
         <div className="flex flex-block min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4">
-          <div className="  w-[1296px] h-[634px]  rounded-[12px]">
-            <img src={Banner} alt="Logo" />
+        <div className="  w-[1296px] h-[634px]  rounded-[12px]">
+          <img src={Banner} alt="Logo" />
            <div className="absolute w-[828px] h-[106px] left-[120px] top-[150px]"> <p className="  font-semibold text-[40px] text-left leading-[53px] text-[#FEFCF4]">
               З Helmee ти можеш стати донором або подати заявку на допомогу
             </p>
