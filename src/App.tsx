@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import DefaultLayout from './layouts/DefaultLayout';
 import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/home-page/Home-page';
 
 function App() {
   const [count, setCount] = useState(0); // State for demonstration purposes
@@ -11,9 +12,9 @@ function App() {
   return (
     <div>
       <Routes>
-        {/* Ensure DefaultLayout is rendered as the initial route */}
-        <Route path="/" element={<DefaultLayout />} />
-        {/* Add other routes here if needed */}
+       
+        <Route path="/" element={<DefaultLayout />}  >
+      <Route index element={<HomePage />} />     </Route>
       </Routes>
     </div>
   );
