@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -9,10 +9,11 @@ import NeedsHelps from './pages/needs-help/NeedsHelps';
 import Register from './pages/auth/register/Register';
 import Login from './pages/auth/login/Login';
 import { ProfileWho } from './pages/personalCabinetWhoHelp/ProfileWho';
-
+import Settings from './pages/personalCabinetWhoHelp/settings/Settings';
+ 
 function App() {
   const [count, setCount] = useState(0); // State for demonstration purposes
-
+  const profileRoutes = lazy(() => import('.//pages/personalCabinetWhoHelp/settings/Settings'));
   return (
     <div>
       <Routes>
@@ -23,7 +24,10 @@ function App() {
           <Route path="reg" element={<Register />} />
           <Route path="log" element={<Login />} />
 
-          <Route path="profile" element={<ProfileWho />}>     </Route>
+          <Route path="profile" element={<ProfileWho />}> 
+          <Route  index element={<Settings />} />
+           
+              </Route>
         </Route>
       </Routes>
     </div>

@@ -11,8 +11,8 @@ const ProfileWho = () => {
               <h1 className="text-[2rem] mr-[58rem]">Обліковий запис</h1>
               <div className="flex flex-grow items-center justify-flex-start py-4 px-20 md:px-6 2xl:px-11">
 
-                  <a href="#" className="font-medium text-[20px] mx-4 text-black-600 underline dark:text-black-500 hover:no-underline">Налаштування</a>
-                  <a href="#" className="font-medium text-[20px] text-black-600 underline dark:text-black-500 hover:no-underline">Історя моїх платежів</a>
+                  <a href="" className="font-medium text-[20px] mx-4 text-black-600 underline dark:text-black-500 hover:no-underline">Налаштування</a>
+                  <a href="/needs" className="font-medium text-[20px] text-black-600 underline dark:text-black-500 hover:no-underline">Історя моїх платежів</a>
                   <a href="#" className="font-medium text-[20px] mx-4 border-black  border-[2px] rounded-full px-5 text-black-600 underline dark:text-black-500 hover:no-underline">Допомогти</a>
 
               </div>
@@ -36,7 +36,7 @@ const ProfileWho = () => {
 
 
                   </div>  
-                  <div className="flex page mt-6 relative left-[59rem]">
+                  <div className="flex page mt-6 relative bottom-[31rem] left-[59rem]">
                       <Outlet></Outlet>
                   </div>
               </div>
