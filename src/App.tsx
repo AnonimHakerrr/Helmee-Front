@@ -11,6 +11,7 @@ import Login from './pages/auth/login/Login';
 import { ProfileWho } from './pages/personalCabinetWhoHelp/ProfileWho';
 import Settings from './pages/personalCabinetWhoHelp/settings/Settings';
 import History from './pages/personalCabinetWhoHelp/history/History';
+import Password from './components/editPassword/Password';
  
 function App() {
   const [count, setCount] = useState(0); // State for demonstration purposes
@@ -28,6 +29,8 @@ function App() {
           <Route path="profile" element={<ProfileWho />}> 
           <Route index element={<Settings />}  />
           <Route path="/profile/history" element={<History />} />
+          <Route path="/profile/password" element={<Password />} />
+          
           </Route>
         </Route>
       </Routes>

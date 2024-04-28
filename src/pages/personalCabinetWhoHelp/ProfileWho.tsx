@@ -30,7 +30,7 @@ const ProfileWho = () => {
 
                       </div>
 
-                      <button type="submit" className=" w-[267px] block    mt-12 px-2 py-2 bg-black border-[2px] border-[#5BC0EB]    rounded-[4px] text-center text-sm font-semibold text-[#5BC0EB] shadow-sm hover:bg-[#FEFCF4] hover:text-[#5BC0EB] hover:border-[#5BC0EB]   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Змінити пароль</button>
+                      <a    href='/profile/password' className=" w-[267px] block    mt-12 px-2 py-2 bg-black border-[2px] border-[#5BC0EB]    rounded-[4px] text-center text-sm font-semibold text-[#5BC0EB] shadow-sm hover:bg-[#FEFCF4] hover:text-[#5BC0EB] hover:border-[#5BC0EB]   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Змінити пароль</a>
 
                       <p className="font-semibold mt-24  text-[24px] font-medium leading-[28.78px] text-left"  ><a href=""  className="font-medium text-[20px] mx-4 text-black-600 underline dark:text-black-500 hover:no-underline">Видалити профіль</a> </p>
 
