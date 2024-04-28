@@ -12,6 +12,8 @@ import History from './pages/personalCabinetWhoHelp/history/History';
 import Password from './components/editPassword/Password';
 import { ProfileHelp } from './pages/personalCabinetWhoHelp/ProfileHelp';
 import CreateNeeds from './pages/needs-help/CreateNeeds';
+import PostNeeds from './pages/needs-help/PostNeeds';
+import EditNeeds from './pages/needs-help/EditNeeds';
  
 function App() {
   
@@ -35,9 +37,13 @@ function App() {
           <Route index element={<Settings />}  />
           <Route path="/profileHelp/history" element={<History />} />
           <Route path="/profileHelp/password" element={<Password />} />
-          
+ 
           </Route>
           <Route path="add" element={<CreateNeeds/>}> 
+          </Route>
+          <Route path="post" element={<     PostNeeds/>}> 
+          </Route>
+          <Route path="edit" element={<EditNeeds/>}> 
           </Route>
         </Route>
       </Routes>
