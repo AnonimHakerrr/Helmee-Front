@@ -12,7 +12,7 @@ const Password = () => {
                 </div>
                 <div className="relative left-[35%] bottom-[80%] transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                 <div className=" -mx-10 my-5 flex w-full flex-shrink-0 items-center justify-end rounded-full  ">
-                <a href="/profile" className="text-24 ">X</a>
+                <a href="/profileHelp" className="text-24 ">X</a>
                 </div>
                 <h1 className="text-[2rem] my-5 mx-5 text-left ">Зміна паролю</h1>
                     <form className="my-5 max-w-md mx-auto">

@@ -20,7 +20,7 @@ const Header = ( ) => {
           
           <div className="flex flex-grow items-center justify-between py-4 px-4 md:px-6 2xl:px-11">
       
-        <a href="/profile" className="font-semibold  text-[24px] font-medium leading-[28.78px] text-left">Прохання</a>
+        <a href="/profileHelp" className="font-semibold  text-[24px] font-medium leading-[28.78px] text-left">Прохання</a>
         </div>
         <div className="flex flex-grow items-center justify-between py-4 px-20 md:px-6 2xl:px-11">
       
