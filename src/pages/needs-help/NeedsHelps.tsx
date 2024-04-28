@@ -154,7 +154,7 @@ return(
        <h1 className="text-2xl my-4 font-bold  tracking-tight text-black-900 text-[45px]">  Якщо ти потребуєш допомоги скажи про це!</h1>
        <div className="flex flex-grow items-center justify-between py-4 px-20 md:px-6 2xl:px-11">
       
-      <a href="#" className="   h-[Hug (72px)px] block  w-full mx-[250px]   py-5     bg-[#1FF542] border-[2px] border-[solid] border-[#FEFCF4]   rounded-[4px] text-center text-sm font-semibold text-black   hover:bg-[#FEFCF4] hover:text-[#5BC0EB] hover:border-[#5BC0EB]   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><p className="text-[25px] ">мені потрібна допомога</p></a>
+      <a href="/add" className="   h-[Hug (72px)px] block  w-full mx-[250px]   py-5     bg-[#1FF542] border-[2px] border-[solid] border-[#FEFCF4]   rounded-[4px] text-center text-sm font-semibold text-black   hover:bg-[#FEFCF4] hover:text-[#5BC0EB] hover:border-[#5BC0EB]   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"><p className="text-[25px] ">мені потрібна допомога</p></a>
       </div>
        
   </div>
