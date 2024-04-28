@@ -2,9 +2,73 @@
 import Banner from '../../../assets/logo/reg.png';
 import Google from '../../../assets/logo/devicon_google.svg';
 import FaceBook from  '../../../assets/logo/logos_facebook.svg';
+import { storeToken } from '../../../services/tokenService';
+import { IRegistrationRequest, IRegistrationResult } from './types';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import * as yup from 'yup';
+import { useFormik } from 'formik';
 const Register =()=>{
 
 return(
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+  const navigator = useNavigate();
+
+  const request: IRegistrationRequest = {
+    email: '',
+    password: '',
+    passwordConfirm: '',
+    fullName: '',
+    description: '',
+ 
+  };
+
+  const requestSchema = yup.object({
+    email: yup.string().required(t('auth.signUp.yourEmail')).email(t('auth.signUp.emailValidation')),
+    password: yup.string().required(t('auth.signUp.yourPassword')).min(8, t('auth.signUp.passwordMinLength')),
+    passwordConfirm: yup
+      .string()
+      .required(t('auth.signUp.repeatPassword'))
+      .test('equal', t('auth.signUp.passwordMismatch'), (v) => {
+        return v === values.password;
+      }),
+    firstName: yup.string().required(t('auth.signUp.yourFirstName')).min(2),
+    lastName: yup.string().required(t('auth.signUp.yourLastName')).min(2),
+    channelPhoto: yup.mixed().required(t('auth.signUp.imageError')),
+  });
+
+  const onFormSubmit = async (values: IRegistrationRequest) => {
+    try {
+      setIsLoading(() => true);
+      const result = await http_api.post<IRegistrationResult>('/api/auth/signup', values, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+
+      const { token, verificationToken } = result.data;
+      storeToken(token);
+
+      localStorage.setItem('verificationToken', verificationToken);
+
+     
+      navigator('/auth/verifymail');
+    } catch (error) {
+     
+    } finally {
+      setIsLoading(() => false);
+    }
+  };
+
+ 
+  const formik = useFormik({
+    initialValues: request,
+    validationSchema: requestSchema,
+    onSubmit: onFormSubmit,
+  });
+
+  const { values, errors, handleSubmit, handleChange } = formik;
+
 
 <>
         <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
@@ -48,16 +112,7 @@ return(
 
                 </form>
 
-                <h1 className="text-sm font-medium ">або за допомогою</h1>
-                <div className="flex flex-grow items-center absolute left-[70%] top-[690px]">
-
-                    <img src={Google} alt="Logo" className="mx-4" />       <img src={FaceBook} alt="Logo" />
-
-
-
-
-
-                </div>
+                 
 
 
             </div>
