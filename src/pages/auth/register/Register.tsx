@@ -41,7 +41,7 @@ const Register =()=>{
   const onFormSubmit = async (values: IRegistrationRequest) => {
     try {
       setIsLoading(() => true);
-      const result = await http_api.post<IRegistrationResult>('/api/auth/signup', values, {
+      const result = await http_api.post<IRegistrationResult>('http://198.46.226.156/api/v1/users/signup/', values, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -53,7 +53,7 @@ const Register =()=>{
       localStorage.setItem('verificationToken', verificationToken);
 
      
-      navigator('/auth/verifymail');
+      navigator('/');
     } catch (error) {
      
     } finally {

@@ -12,7 +12,7 @@ export const storeToken = (token: string) => {
   localStorage.setItem('token', `Bearer ${token}`);
   http_api.defaults.headers['Authorization'] = getToken();
   const user: IUser = jwtDecode(token);
-  addToken(user.userId.toString(),token);
+ 
  
   store.dispatch({
     type: AuthUserActionType.LOGIN_USER,
@@ -29,6 +29,7 @@ export const storeToken = (token: string) => {
 export const loadTokenFromStorage = () => {
   console.log('loadTokenFromStorage token');
   const token = getToken() as string;
+
   http_api.defaults.headers['Authorization'] = token;
   const user: IUser = jwtDecode(token);
   store.dispatch({
@@ -44,7 +45,9 @@ export const loadTokenFromStorage = () => {
 };
 
 export const getToken = () => {
-  return localStorage.getItem('token');
+const token =  localStorage.getItem('token')  ;
+  console.log("dsad",token);
+  return token;
 };
 
 export const removeToken = () => {
