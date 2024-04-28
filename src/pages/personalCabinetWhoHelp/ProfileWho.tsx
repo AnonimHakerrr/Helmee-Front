@@ -12,7 +12,7 @@ const ProfileWho = () => {
               <div className="flex flex-grow items-center justify-flex-start py-4 px-20 md:px-6 2xl:px-11">
 
                   <a href="/profile" className="font-medium text-[20px] mx-4 text-black-600 underline dark:text-black-500 hover:no-underline">Налаштування</a>
-                  <a href="/profile/log" className="font-medium text-[20px] text-black-600 underline dark:text-black-500 hover:no-underline">Історя моїх платежів</a>
+                  <a href="/profile/history" className="font-medium text-[20px] text-black-600 underline dark:text-black-500 hover:no-underline">Історя моїх платежів</a>
                   <a href="#" className="font-medium text-[20px] mx-4 border-black  border-[2px] rounded-full px-5 text-black-600 underline dark:text-black-500 hover:no-underline">Допомогти</a>
 
               </div>
