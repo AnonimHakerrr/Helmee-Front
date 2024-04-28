@@ -1,6 +1,4 @@
-import React, { Suspense, lazy, useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+ 
 import './App.css';
 import DefaultLayout from './layouts/DefaultLayout';
 import { Route, Routes } from 'react-router-dom';
@@ -13,10 +11,10 @@ import Settings from './pages/personalCabinetWhoHelp/settings/Settings';
 import History from './pages/personalCabinetWhoHelp/history/History';
 import Password from './components/editPassword/Password';
 import { ProfileHelp } from './pages/personalCabinetWhoHelp/ProfileHelp';
+import CreateNeeds from './pages/needs-help/CreateNeeds';
  
 function App() {
-  const [count, setCount] = useState(0); // State for demonstration purposes
-  const profileRoutes = lazy(() => import('.//pages/personalCabinetWhoHelp/settings/Settings'));
+  
   return (
     <div>
       <Routes>
@@ -38,6 +36,8 @@ function App() {
           <Route path="/profileHelp/history" element={<History />} />
           <Route path="/profileHelp/password" element={<Password />} />
           
+          </Route>
+          <Route path="add" element={<CreateNeeds/>}> 
           </Route>
         </Route>
       </Routes>
