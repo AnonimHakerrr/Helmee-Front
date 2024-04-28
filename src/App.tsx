@@ -25,9 +25,9 @@ function App() {
           <Route path="log" element={<Login />} />
 
           <Route path="profile" element={<ProfileWho />}> 
-          <Route  index element={<Settings />} />
-           
-              </Route>
+          <Route index element={<Settings />}  />
+          <Route path="/profile/log" element={<Login />} />
+          </Route>
         </Route>
       </Routes>
     </div>

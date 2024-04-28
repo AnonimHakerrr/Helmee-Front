@@ -11,8 +11,8 @@ const ProfileWho = () => {
               <h1 className="text-[2rem] mr-[58rem]">Обліковий запис</h1>
               <div className="flex flex-grow items-center justify-flex-start py-4 px-20 md:px-6 2xl:px-11">
 
-                  <a href="" className="font-medium text-[20px] mx-4 text-black-600 underline dark:text-black-500 hover:no-underline">Налаштування</a>
-                  <a href="/needs" className="font-medium text-[20px] text-black-600 underline dark:text-black-500 hover:no-underline">Історя моїх платежів</a>
+                  <a href="/profile" className="font-medium text-[20px] mx-4 text-black-600 underline dark:text-black-500 hover:no-underline">Налаштування</a>
+                  <a href="/profile/log" className="font-medium text-[20px] text-black-600 underline dark:text-black-500 hover:no-underline">Історя моїх платежів</a>
                   <a href="#" className="font-medium text-[20px] mx-4 border-black  border-[2px] rounded-full px-5 text-black-600 underline dark:text-black-500 hover:no-underline">Допомогти</a>
 
               </div>
@@ -32,11 +32,11 @@ const ProfileWho = () => {
 
                       <button type="submit" className=" w-[267px] block    mt-12 px-2 py-2 bg-black border-[2px] border-[#5BC0EB]    rounded-[4px] text-center text-sm font-semibold text-[#5BC0EB] shadow-sm hover:bg-[#FEFCF4] hover:text-[#5BC0EB] hover:border-[#5BC0EB]   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Змінити пароль</button>
 
-                      <p className="font-semibold mt-24  text-[24px] font-medium leading-[28.78px] text-left">Видалити профіль</p>
+                      <p className="font-semibold mt-24  text-[24px] font-medium leading-[28.78px] text-left"  ><a href=""  className="font-medium text-[20px] mx-4 text-black-600 underline dark:text-black-500 hover:no-underline">Видалити профіль</a> </p>
 
 
                   </div>  
-                  <div className="flex page mt-6 relative bottom-[31rem] left-[59rem]">
+                  <div className="flex page mt-6 relative bottom-[31rem] left-[59rem] main-content">
                       <Outlet></Outlet>
                   </div>
               </div>
