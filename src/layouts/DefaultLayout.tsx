@@ -1,11 +1,11 @@
  
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
-import { useRef } from "react";
+ 
  
  
 const DefaultLayout = () => {
-  const scrollable = useRef<any>();
+ 
   return (
     <div className="dark:bg-body dark:text-bodydark ">
       {/* <!-- ===== Page Wrapper Start ===== --> */}
